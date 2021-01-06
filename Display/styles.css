@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+}
+
+.container > div {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px 10px;
+    margin: auto;
+    
+}
+
+.container {
+    display: grid;
+    background: lightblue;
+    height: 70px;
+
+    grid-template-columns:  repeat(5, 1fr) repeat(3,max-content);
+  
+}
+
+.galery {
+    grid-column: 6/7;
+}
+
+.about {
+    grid-column: 7/8;
+}
+
+.contact {
+    grid-column: 8/9;
+}
+

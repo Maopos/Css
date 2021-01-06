@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    color: #1d1128;
+
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-rows: 70px 1fr 200px;
+    
+    grid-template-areas: 
+    "header     header      header"
+    "etiqueta   contenido   sidebar"
+    "footer     footer      footer"
+   
+}
+
+.header{
+    width: 95%;
+    max-width: 1400px;
+    height: 75px;
+    position: fixed;
+    background: #1d1128;
+    grid-area: header;
+}
+
+.etiqueta{
+    position: relative;
+    top: 160px;
+    left: 160px;
+    height: 300px;
+    background: #6d72c3;
+    grid-area: etiqueta;
+    
+}
+
+.texto {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;    
+    margin: auto;
+    color: #240b3b;   
+}
+
+.contenido{
+    height: 400px;
+    background-image:  url("Captura.PNG");
+    background-size: contain;
+    grid-area: contenido;
+}
+
+.sidebar{
+    position: sticky;
+    height: 600px;
+    background: #e5d4ed;
+    grid-area: sidebar;
+    top: 0;
+}
+
+.footer{
+    margin-top: 60px;
+    background: #514f59;
+    grid-area: footer;
+    height: 1500px;
+}
+
+.tarjeta{
+    position: relative;
+    top: 50px;
+    left: 60px;
+
+    height: 200px;
+    background: #e5d4ed;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+/*---------------*/

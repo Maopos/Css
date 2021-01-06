@@ -1,0 +1,41 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+}
+
+.container {
+    
+}
+
+.container div {
+   
+    float: right;
+   
+}
+
+.primary {
+    background: salmon;
+    width: 50%;
+}
+
+.secundary {
+    background: sandybrown;
+    width: 50%;
+}
+
+.container img {
+    width: 250px;
+    height: 250px;
+    float: left;
+    padding: 20px;
+}
+
+h1 {
+    padding: 30px;
+}
